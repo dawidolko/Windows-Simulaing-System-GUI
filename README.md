@@ -74,8 +74,8 @@ SIMULAING-WINDOW...
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/dawidolko/Simulaing-Windows-System-GUI
-cd Simulaing-Windows-System-GUI
+git clone https://github.com/dawidolko/Windows-Simulaing-System-GUI
+cd Windows-Simulaing-System-GUI/
 
 # 2. Install dependencies
 npm install     # or pnpm / yarn
