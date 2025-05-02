@@ -46,6 +46,10 @@ SIMULAING-WINDOW...
 └─ README.md
 ```
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=dawidolko/Windows-Simulaing-System-GUI&type=Date)](https://star-history.com/#dawidolko/Windows-Simulaing-System-GUI&Date)
+
 <h4 align="center">A customizable portfolio website based on Microsoft Windows 10 theme.</h4>
 
 <p align="center">  
