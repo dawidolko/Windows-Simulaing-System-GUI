@@ -1,4 +1,4 @@
-import default_wallpaper from "../../assets/images/wallpapers/default_wallpaper.jpg";
+import default_wallpaper from "../../assets/images/wallpapers/default_wallpaper.webp";
 
 class SettingDocument {
 	constructor() {

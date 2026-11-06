@@ -1,3 +1,4 @@
+import { lazy } from "react";
 import AboutMe from "../../components/applications/about/aboutMe.about";
 import ContactMe from "../../components/applications/about/contactMe.about";
 import Education from "../../components/applications/about/education.about";
@@ -7,10 +8,7 @@ import Resume from "../../components/applications/about/resume.about";
 import Skills from "../../components/applications/about/skills.about";
 import Chrome from "../../components/applications/chrome.application";
 import JIOSaavn from "../../components/applications/jiosaavn.application";
-import Mail from "../../components/applications/mail.application";
-import SpreadsheetApp from "../../components/applications/spreadsheet.application";
 import VSCode from "../../components/applications/vscode.application";
-import Word from "../../components/applications/document.application";
 import aboutMe from "../../assets/images/apps/aboutMe.png";
 import chrome from "../../assets/images/apps/chrome.svg";
 import jioSaavn from "../../assets/images/apps/jioSaavn.png";
@@ -20,6 +18,10 @@ import spreadsheet from "../../assets/images/apps/spreadsheet.svg";
 import vsCode from "../../assets/images/apps/vsCode.png";
 import settings from "../../assets/images/apps/settings.svg";
 import BackgroundSettings from "../../components/applications/settings/background.settings";
+
+const Mail = lazy(() => import("../../components/applications/mail.application"));
+const SpreadsheetApp = lazy(() => import("../../components/applications/spreadsheet.application"));
+const Word = lazy(() => import("../../components/applications/document.application"));
 
 const appConfig = [
 	{

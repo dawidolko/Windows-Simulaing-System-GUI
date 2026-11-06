@@ -12,9 +12,9 @@ function CalendarOverlay() {
 			className="uk-padding-remove"
 		>
 			<div className="uk-offcanvas-bar action-center">
-				<h1 className="uk-padding-remove uk-margin-remove">
+				<p className="uk-h1 uk-padding-remove uk-margin-remove">
 					<Clock format="HH:mm:ss" ticking={true} />
-				</h1>
+				</p>
 				<p className="uk-padding-remove uk-margin-remove">
 					<Clock format={"DD MMMM YYYY"} ticking={true} />
 				</p>

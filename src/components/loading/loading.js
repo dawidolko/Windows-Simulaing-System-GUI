@@ -14,7 +14,7 @@ function Loading() {
 					<span className="pip-4"></span>
 					<span className="pip-5"></span>
 				</div>
-				<h1 className="font-color-white">Loading...</h1>
+				<p className="uk-h1 font-color-white">Loading...</p>
 			</div>
 		</div>
 	);

@@ -1,6 +1,7 @@
 import React from "react";
 import SocialBlock from "../../base/socialBlock";
-import Mail from "../mail.application";
+
+const Mail = React.lazy(() => import("../mail.application"));
 
 function ContactMe() {
 	return (

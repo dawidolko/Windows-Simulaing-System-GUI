@@ -51,6 +51,7 @@ function AppComponent(props) {
 								(component, index) => {
 									return (
 										<li
+											role="presentation"
 											className="uk-margin-remove"
 											key={index}
 										>
@@ -61,7 +62,7 @@ function AppComponent(props) {
 												}
 												href={() => false}
 											>
-												<li className="sidebar-list-item uk-margin-remove">
+												<li role="presentation" className="sidebar-list-item uk-margin-remove">
 													{component.name}
 												</li>
 											</a>
@@ -214,7 +215,7 @@ function AppComponent(props) {
 														}
 														href={() => false}
 													>
-														<li className="sidebar-list-item uk-margin-remove">
+														<li role="presentation" className="sidebar-list-item uk-margin-remove">
 															{component.name}
 														</li>
 													</a>
@@ -226,7 +227,7 @@ function AppComponent(props) {
 							</div>
 						</div>
 
-						<ul
+						<div
 							className={
 								"uk-switcher height-100 " +
 								props.appInfo.id +
@@ -238,18 +239,18 @@ function AppComponent(props) {
 							{props.appInfo.subComponent.map(
 								(component, index) => {
 									return (
-										<li
+										<div
 											className="uk-padding-small height-100"
 											key={index}
 										>
-											<React.Fragment>
+											<React.Suspense fallback={null}>
 												<component.component></component.component>
-											</React.Fragment>
-										</li>
+											</React.Suspense>
+										</div>
 									);
 								}
 							)}
-						</ul>
+						</div>
 					</div>
 				</div>
 			</div>

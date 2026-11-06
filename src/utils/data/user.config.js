@@ -1,7 +1,6 @@
 import ResumePDF from "./cv_ver1.pdf";
 import default_avatar from "../../assets/images/baseImages/default_avatar.svg";
 import KloudGin from ".././../assets/images/data/KloudGin.png";
-import Freelance from ".././../assets/images/data/Freelance.png";
 
 const user = {
   firstName: "Dawid",
@@ -13,7 +12,7 @@ const user = {
   gitHub: "dawidolko",
   twitter: "dawidolko",
   aboutMe: {
-    intro: " I'm a Full Stack Software Development Engineer from Poland.",
+    intro: " I'm a Fullstack / AI Developer from Poland.",
     description:
       "I enjoy taking up complex problems and converting to an usable format. My major domains are Web Development (React / Angular) and Software Development (Java / Python).",
     outro:
@@ -47,22 +46,6 @@ const user = {
           endDate: "---",
           isPresent: false,
           description: "---",
-        },
-      ],
-    },
-    {
-      organization: "Freelance Developer",
-      startDate: "2017",
-      endDate: "2019",
-      organizationPicture: Freelance,
-      isCurrent: false,
-      positions: [
-        {
-          positionName: "-",
-          startDate: "-",
-          endDate: "-",
-          isPresent: false,
-          description: "-",
         },
       ],
     },

@@ -26,7 +26,7 @@ function SignInScreen() {
           />
         </div>
         <div>
-          <h1 className="uk-heading-small  font-color-white">Dawid Olko</h1>
+          <p className="uk-heading-small font-color-white">Dawid Olko</p>
         </div>
         <div>
           <TextField

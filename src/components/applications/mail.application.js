@@ -1,14 +1,12 @@
 import { Icon, MessageBar, MessageBarType, TextField } from "@fluentui/react";
 import React, { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
 import "./application.scss";
-import firebase from "../../utils/firebaseConfig";
-import { ANALYTICS_EVENTS } from "../../utils/documents/enums";
-import projectAnalytics from "../../utils/data/project.config";
 
 function Mail() {
   useEffect(() => {
-    window.emailjs.init(process.env.REACT_APP_EMAILJS_KEY);
-  });
+    emailjs.init(process.env.REACT_APP_EMAILJS_KEY);
+  }, []);
   const [emailResponse, setEmailResponse] = useState({
     template: {
       from: "",
@@ -40,18 +38,12 @@ function Mail() {
         subject: emailResponse.template.subject,
         from: emailResponse.template.from,
       };
-      console.log(templateParams);
-      if (projectAnalytics.enableAnalytics) {
-        firebase.analytics().logEvent(ANALYTICS_EVENTS.SEND_MAIL, {
-          template: templateParams,
-        });
-      }
       sendFeedback(templateId, templateParams);
     }
   };
 
   const sendFeedback = (templateId, variables) => {
-    window.emailjs
+    emailjs
       .send("default_service", templateId, variables)
       .then((res) => {
         var templateMeta = {
@@ -68,7 +60,6 @@ function Mail() {
           ),
         };
         setEmailResponse({ template: templateMeta });
-        console.log(emailResponse);
       })
       .catch((err) => {
         console.error(
