@@ -1,6 +1,5 @@
 import ResumePDF from "./cv_ver1.pdf";
 import default_avatar from "../../assets/images/baseImages/default_avatar.svg";
-import KloudGin from ".././../assets/images/data/KloudGin.png";
 
 const user = {
   firstName: "Dawid",
@@ -10,90 +9,32 @@ const user = {
   email: "poczta@dawidolko.pl",
   linkedIn: "in/dawidolko",
   gitHub: "dawidolko",
-  twitter: "dawidolko",
   aboutMe: {
-    intro: " I'm a Fullstack / AI Developer from Poland.",
+    intro: " I'm a Fullstack / AI Developer from Rzeszów, Poland.",
     description:
-      "I enjoy taking up complex problems and converting to an usable format. My major domains are Web Development (React / Angular) and Software Development (Java / Python).",
-    outro:
-      "When I'm not developing any stuff , you will find me re-watching an episode of The Office or exploring a new place.",
+      "I hold a BEng in Computer Science from the University of Rzeszów, and my MSc is in progress. I build web applications end to end and tools for working with AI coding agents.",
+    outro: "I'm a co-creator of Skribly.",
   },
-  experiences: [
-    {
-      organization: "-",
-      organizationPicture: KloudGin,
-      isCurrent: true,
-      startDate: "Jun 2019",
-      endDate: null,
-      positions: [
-        {
-          positionName: "-",
-          startDate: "-",
-          endDate: " -",
-          isPresent: true,
-          description: "-",
-        },
-        {
-          positionName: "--",
-          startDate: "--",
-          endDate: "--",
-          isPresent: false,
-          description: "--",
-        },
-        {
-          positionName: "---",
-          startDate: "---",
-          endDate: "---",
-          isPresent: false,
-          description: "---",
-        },
-      ],
-    },
-  ],
   education: [
     {
-      instituteName: "-",
-      degree: "-",
-      year: "-",
+      instituteName: "University of Rzeszów",
+      degree: "MSc in Computer Science",
+      year: "2026 - present",
       id: 1,
     },
     {
-      instituteName: "--",
-      degree: "--",
-      year: "--",
+      instituteName: "University of Rzeszów",
+      degree: "BEng in Computer Science",
+      year: "2022 - 2026",
       id: 2,
-    },
-    {
-      instituteName: "--",
-      degree: "--",
-      year: "--",
-      id: 3,
     },
   ],
   projects: [
     {
-      projectName: "Note",
-      description: "-",
-      madeWith: ["-", "--", "---", "----"],
-      link: "https://github.com/dawidolko/",
-    },
-    {
-      projectName: "Bus Management",
-      description: "-",
-      madeWith: ["-", "--", "---"],
-      link: "https://github.com/dawidolko/",
-    },
-    {
-      projectName: "Seat Swapper",
-      description: "-",
-      madeWith: ["Java", "MySQL", "BlockChain", "HTML", "CSS", "JavaScript"],
-      link: "https://github.com/dawidolko/",
-    },
-    {
-      projectName: "Flight Ticket Saver",
-      description: "-",
-      madeWith: ["Python", "DJANGO", "HTML", "CSS", "JavaScript"],
-      link: "https://github.com/dawidolko/",
+      projectName: "Skribly",
+      description: "Co-creator. https://skribly.pl",
+      madeWith: ["Electron", "Laravel", "TypeScript"],
+      link: "https://skribly.pl",
     },
   ],
   skills: [

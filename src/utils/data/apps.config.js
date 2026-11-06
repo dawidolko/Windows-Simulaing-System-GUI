@@ -2,7 +2,6 @@ import { lazy } from "react";
 import AboutMe from "../../components/applications/about/aboutMe.about";
 import ContactMe from "../../components/applications/about/contactMe.about";
 import Education from "../../components/applications/about/education.about";
-import Experience from "../../components/applications/about/experience.about";
 import Projects from "../../components/applications/about/projects.about";
 import Resume from "../../components/applications/about/resume.about";
 import Skills from "../../components/applications/about/skills.about";
@@ -36,10 +35,6 @@ const appConfig = [
 			{
 				name: "About Me",
 				component: AboutMe,
-			},
-			{
-				name: "Experience",
-				component: Experience,
 			},
 			{
 				name: "Education",
