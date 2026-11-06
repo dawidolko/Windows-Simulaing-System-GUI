@@ -12,12 +12,20 @@ import { initializeIcons } from "@fluentui/react/lib/Icons";
 import * as serviceWorker from "./serviceWorker";
 
 initializeIcons();
-ReactDOM.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>,
-	document.getElementById("root")
-);
+/*
+  Waiting one frame lets the HTML in the first response paint before the application
+  replaces it. A tab opened in the background has no frames, so it mounts at once.
+*/
+const mount = () =>
+	ReactDOM.render(
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>,
+		document.getElementById("root")
+	);
+
+if (document.hidden) mount();
+else requestAnimationFrame(() => setTimeout(mount));
 
 serviceWorker.unregister();
 reportWebVitals();
