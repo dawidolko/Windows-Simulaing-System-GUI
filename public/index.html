@@ -65,6 +65,16 @@
       body .a11yp__panel {
         max-height: calc(100vh - 132px);
       }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
     </style>
     <script src="/a11y/a11y-panel.js" data-accent="#0067c0" data-position="right" defer></script>
   </head>
