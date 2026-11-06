@@ -6,6 +6,8 @@
 
 > 🪟 **A portfolio that boots** — a Windows 10 desktop rebuilt in React, with draggable windows, a start menu and real apps inside it
 
+**Based on [Portfolio_OS_Theme](https://github.com/srinibasbiswal/Portfolio_OS_Theme) by [Srinibas Biswal](https://github.com/srinibasbiswal), MIT licence.** Not affiliated with Microsoft; this is an interface imitation for portfolio purposes.
+
 Instead of a page with sections, this portfolio opens as a desktop. Windows drag, resize and stack, the start menu works, the wallpaper changes, and each "application" is a part of the CV — projects, contact, notes.
 
 Underneath it is an ordinary React single-page application; the operating system is the interface metaphor, not an emulator. Microsoft's own Fluent UI supplies the controls, which is what keeps the imitation honest.
@@ -120,7 +122,7 @@ An accessibility panel in the corner of every page changes text size, contrast, 
 
 ## 📄 License
 
-MIT © [Dawid Olko](https://dawidolko.pl)
+MIT. Copyright (c) 2020 [Srinibas Biswal](https://github.com/srinibasbiswal) and Copyright (c) 2024 [Dawid Olko](https://dawidolko.pl), see [LICENSE](LICENSE). Icons and images keep their own terms, listed in [CREDITS.md](CREDITS.md).
 
 ---
 

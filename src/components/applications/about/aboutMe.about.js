@@ -40,6 +40,18 @@ function AboutMe() {
 						{user.aboutMe.outro}
 					</div>
 				)}
+				<p className="uk-margin-medium-top uk-text-small font-color-white">
+					Based on{" "}
+					<a
+						className="font-color-white"
+						href="https://github.com/srinibasbiswal/Portfolio_OS_Theme"
+						target="_blank"
+						rel="noopener noreferrer">
+						<u>Portfolio_OS_Theme</u>
+					</a>{" "}
+					by Srinibas Biswal, MIT licence. Not affiliated with Microsoft.
+					Interface imitation for portfolio purposes.
+				</p>
 			</div>
 		</div>
 	);

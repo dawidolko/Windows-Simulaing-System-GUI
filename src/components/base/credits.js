@@ -18,6 +18,20 @@ function Credits(props) {
           <table className="uk-table">
             <tbody>
               <tr>
+                <td>Based on : </td>
+                <td>
+                  <span
+                    onClick={() =>
+                      navigate(
+                        "https://github.com/srinibasbiswal/Portfolio_OS_Theme"
+                      )
+                    }>
+                    Portfolio_OS_Theme
+                  </span>{" "}
+                  by Srinibas Biswal, MIT licence
+                </td>
+              </tr>
+              <tr>
                 <td>Framework : </td>
                 <td>
                   <span onClick={() => navigate("https://getuikit.com/")}>
@@ -39,6 +53,15 @@ function Credits(props) {
                 <td>
                   <span onClick={() => navigate("https://icons8.com/")}>
                     Icons8
+                  </span>
+                  {", "}
+                  <span
+                    onClick={() =>
+                      navigate(
+                        "https://github.com/microsoft/fluentui-system-icons"
+                      )
+                    }>
+                    Fluent UI System Icons
                   </span>
                 </td>
               </tr>
@@ -113,6 +136,10 @@ function Credits(props) {
               <span className="font-color-red font-size-medium">&hearts; </span>
             </TooltipHost>
             by Dawid Olko
+          </p>
+          <p>
+            Not affiliated with Microsoft. Interface imitation for portfolio
+            purposes.
           </p>
         </div>
       </div>
