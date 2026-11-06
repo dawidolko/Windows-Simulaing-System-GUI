@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://windows.dawidolko.pl/"><img src="docs/readme/banner.webp" alt="Windows Desktop Portfolio: interface experiment. A portfolio that boots" width="100%"></a>
+</p>
+
 # Windows Desktop Portfolio
 
 > 🪟 **A portfolio that boots** — a Windows 10 desktop rebuilt in React, with draggable windows, a start menu and real apps inside it
@@ -12,7 +16,7 @@ Underneath it is an ordinary React single-page application; the operating system
 ![EmailJS](https://img.shields.io/badge/EmailJS-contact%20form-FF7F50)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Live:** [windows.dawidolko.pl](https://windows.dawidolko.pl)
+**[Live site](https://windows.dawidolko.pl/)** · [Screenshots](#️-screenshots) · [Getting started](#-getting-started)
 
 ---
 
@@ -25,6 +29,15 @@ Underneath it is an ordinary React single-page application; the operating system
 - **A contact form without a backend** — EmailJS sends the message straight from the browser.
 - **Firebase for shared state** — what needs to persist, persists.
 - **Time zone aware** — moment-timezone drives the clock in the system tray.
+
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="docs/readme/desktop.webp" alt="Windows Desktop Portfolio on a desktop screen" width="74%">
+  <img src="docs/readme/mobile.webp" alt="Windows Desktop Portfolio on a phone" width="22%">
+</p>
 
 ---
 
@@ -102,3 +115,11 @@ This is one of four desktop-simulator portfolios, each built on a different stac
 ## 📄 License
 
 MIT © [Dawid Olko](https://dawidolko.pl)
+
+---
+
+## 👨‍💻 Author
+
+**Dawid Olko** · Fullstack / AI Developer
+
+[Portfolio](https://olkodawid.dawidolko.pl) · [CV](https://cv.dawidolko.pl) · [LinkedIn](https://www.linkedin.com/in/dawidolko/) · [GitHub](https://github.com/dawidolko)
